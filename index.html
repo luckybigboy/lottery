@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>幸运中奖</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/lottery.css">
+</head>
+<body>
+  <div class="container-wrapper">
+    <!--  -->
+    <div class="logo-container">
+      <img src="./image/logo.png" alt="">
+    </div>
+    <!--  -->
+    <div class="top-banner">
+      <div class="banner"></div>
+    </div>
+    <!--  -->
+    <div class="prize-wrapper clearfix">
+      <div class="left-prize">
+        <div class="grade-wrapper">
+          <img class="grade-img" id="grade" src="./image/fourth-prize.png" alt="prize" />
+        </div>
+        <div class="btn-wrapper">
+          <img src="./image/btn-start.png" class="btn" data-step="fourthPrize" alt="btn" />
+        </div>
+      </div>
+      <div class="right-winners">
+        <div class="winners-content">
+          <img src="./image/ownerlist.png" alt="ownerlist" />
+          <div class="list-title">
+            <span class="owner-name">获奖名单</span>
+          </div>
+          <div class="list-wrapper">
+            <div class="winners-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<div id="next-wrapper" class="el_hide">
+		<img src="./image/next.png" id="nextPrize" title="下一个奖项" style="cursor:pointer">
+	</div>
+  <script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/lottery.js"></script>
+</body>
+</html>

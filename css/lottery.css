@@ -1,0 +1,208 @@
+/*
+ * @Author: chengengfeng
+ * @Date: 2018-01-05 09:14:25
+ * @Last Modified by: chengengfeng
+ * @Last Modified time: 2019-06-28 14:09:36
+*/
+* {
+  margin:0;
+  padding:0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Microsoft YaHei';
+	background: url('../image/bg.jpg') no-repeat;
+  background-attachment: fixed;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./image/bg.jpg', sizingMethod='scale');
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./image/bg.jpg', sizingMethod='scale');
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  user-select: none;
+}
+.container-wrapper {
+  width: 100%;
+}
+.logo-container {
+  margin: 40px 0 30px 44px;
+}
+.top-banner {
+  width: 90%;
+  margin: 0 auto;
+}
+.banner {
+	height: 200px;
+	background: url('../image/title.png');
+	background-size: 100% 100%;
+}
+.prize-wrapper {
+  width: 100%;
+  margin: -78px auto 0;
+}
+.prize-wrapper .left-prize {
+  float: left;
+  margin-top: 90px;
+  width: 45%;
+  margin-left: 5%;
+  user-select: none;
+  /* background-color: #fff; */
+}
+/* .prize-wrapper .left-prize .grade-wrapper {
+  height: 400px;
+} */
+.prize-wrapper .left-prize .grade-img {
+  width: 100%;
+}
+.prize-wrapper .left-prize .btn-wrapper {
+  margin-top: 82px;
+  text-align: center;
+}
+/* \ */
+.prize-wrapper .right-winners {
+  float: left;
+  width: 50%;
+  height: 650px;
+  position: relative;
+  /* background-color: #fc0; */
+}
+.prize-wrapper .right-winners .winners-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.prize-wrapper .right-winners .winners-content img {
+  width: 100%;
+}
+.prize-wrapper .right-winners .list-title {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  width: 174px;
+  height: 48px;
+  transform: translate(-50%);
+}
+.prize-wrapper .right-winners .list-title span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 42px;
+  text-align: center;
+  font-size: 38px;
+  background: -ms-linear-gradient(to bottom, #ac832a, #ffec8e, #ac832a);
+  background:-moz-linear-gradient(to bottom, #ac832a, #ffec8e, #ac832a);
+  background: -webkit-linear-gradient(to bottom, #ac832a, #ffec8e, #ac832a);
+  background: -o-linear-gradient(to bottom, #ac832a, #ffec8e, #ac832a);
+  background: linear-gradient(to bottom, #ac832a, #ffec8e, #ac832a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.prize-wrapper .right-winners .list-wrapper {
+  position: absolute;
+  top: 172px;
+  left: 13%;
+  display: table;
+  width: 75%;
+  height: 403px;
+  /* background-color: #fff; */
+}
+.prize-wrapper .right-winners .winners-list .list {
+  padding: 11% 8% 0;
+  display: block;
+  text-align: left;
+  font-size: 0;
+  color: #fdd200;
+  flex: auto;
+}
+.prize-wrapper .right-winners .winners-list .list > li {
+  display: inline-block;
+  width: 25%;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+  /* letter-spacing: 4px; */
+}
+.prize-wrapper .right-winners .winners-list .list.no4 > li {
+  width: 33%;
+  /* font-size: 32px; */
+  font-size: 26px;
+}
+.prize-wrapper .right-winners .winners-list .list.only2 > li {
+  width: 50%;
+  /* font-size: 32px; */
+  font-size: 26px;
+}
+.clearfix {
+  zoom:1;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+@media (max-width: 767px) {
+  .prize-wrapper .left-prize, .prize-wrapper .right-winners {
+    float: none;
+    width: 100%;
+  }
+}
+
+span.grand-one-prize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex: auto;
+  text-align: center;
+  color: #fdd200;
+  font-size: 50px;
+  z-index: 2;
+  letter-spacing: 10px;
+  margin-top: 120px;
+}
+
+.dis {
+  pointer-events: none;
+}
+
+#next-wrapper {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+}
+
+.el_hide {
+  display: none;
+}
+
+.fade{animation:fadeInDownBig 2s 0s 1 both;}
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -500px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
